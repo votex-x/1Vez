@@ -1,12 +1,12 @@
 // COLE AQUI O OBJETO firebaseConfig QUE VOCÊ COPIOU DO FIREBASE
 const firebaseConfig = {
-    apiKey: "SUA_API_KEY",
-    authDomain: "SEU_AUTH_DOMAIN",
-    databaseURL: "SUA_DATABASE_URL",
-    projectId: "SEU_PROJECT_ID",
-    storageBucket: "SEU_STORAGE_BUCKET",
-    messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-    appId: "SEU_APP_ID"
+    apiKey: "AIzaSyDUU3IiP6c6jjgLS0ls5i6YI3W0io_PFLM",
+  authDomain: "encurta-b6321.firebaseapp.com",
+  databaseURL: "https://encurta-b6321-default-rtdb.firebaseio.com",
+  projectId: "encurta-b6321",
+  storageBucket: "encurta-b6321.appspot.com",
+  messagingSenderId: "1065915334607",
+  appId: "1:1065915334607:web:5f5181cef49772ddc91cba"
 };
 
 // Inicializa o Firebase
