@@ -1,0 +1,6 @@
+# netlify.toml
+[[redirects]]
+  from = "/view/*"
+  to = "/view/index.html"
+  status = 200
+

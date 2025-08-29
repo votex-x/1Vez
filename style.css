@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #6a0dad;
+    --background-color: #121212;
+    --surface-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --border-color: #333;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+header p {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+#drop-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#drop-area.highlight {
+    background-color: rgba(106, 13, 173, 0.1);
+    border-color: var(--primary-color);
+}
+
+#file-label {
+    cursor: pointer;
+    color: #ccc;
+}
+
+#file-label strong {
+    color: var(--primary-color);
+}
+
+#file-name {
+    margin-top: 1rem;
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #8a2be2;
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.url-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#unique-url {
+    flex-grow: 1;
+    background-color: #333;
+    border: 1px solid #444;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
+    font-family: monospace;
+}
+
+#copy-button {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0 6px 6px 0;
+}
+
+

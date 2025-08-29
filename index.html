@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Vez - Envio Seguro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>1Vez</h1>
+            <p>Envie uma mídia que pode ser vista apenas uma vez.</p>
+        </header>
+        
+        <main id="upload-section">
+            <div id="drop-area">
+                <form class="upload-form">
+                    <input type="file" id="file-input" accept="video/*,image/*,audio/*" hidden>
+                    <label for="file-input" id="file-label">Arraste e solte ou <strong>clique para escolher um arquivo</strong></label>
+                    <p id="file-name"></p>
+                </form>
+            </div>
+            <button id="upload-button" disabled>Gerar Link Secreto</button>
+        </main>
+
+        <div id="loading-section" class="hidden">
+            <div class="spinner"></div>
+            <p>Enviando e criptografando seu link...</p>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <h2>Link gerado com sucesso!</h2>
+            <p>Este link só pode ser aberto uma vez pelo destinatário. Ele se autodestruirá após o uso.</p>
+            <div class="url-container">
+                <input type="text" id="unique-url" readonly>
+                <button id="copy-button">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
